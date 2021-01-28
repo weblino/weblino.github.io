@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weblino - Courses</title>
+    <link rel="stylesheet" href="course.css">
+</head>
+<body>
+    <header>
+        <div class="webheader">
+            <img src="WebLino_logo.png" height="75px" width="190px"> 
+        </div>
+    </header>
+
+    <div class="container"> 
+        
+        <img src="menu_icon.png" height="30px" width="30px" class="menubtn" onclick="openNav()">
+
+        <div id="SideBar" class="sidenav">
+            <img src="WebLino_logo.png" height="25px" width="60px"> 
+            <a class="closebtn" onclick="closeNav()">&minus;</a>
+            <a href="file:///C:/Users/gmarc/Documents/WebsiteSchool/index.html">Home</a>
+            <a href="file:///C:/Users/gmarc/Documents/WebsiteSchool/AboutPP.html#">About</a>
+            <a href="file:///C:/Users/gmarc/Documents/WebsiteSchool/course.html">Courses</a>
+        </div>
+
+        <div class="side">
+            <div class="side_items">
+            <button onclick="openCourse0()">Course 0 - Introduction</button>
+            <button onclick="openCourse1()">Course 1 - HTML Basics</button>
+            <button onclick="openCourse2()">Course 2 - HTML Structure</button>
+            <button onclick="openCourse3()">Course 3 - Website Layout</button>
+            <button onclick="openCourse4()">Course 4 - CSS Basics</button>
+            <button onclick="openCourse5()">Course 5 - Designing Website</button>
+            <button onclick="openCourse6()">Course 6 - Aesthetics</button>
+            <button onclick="openCourse7()">Course 7 - Final Product</button>
+            <img id="logo_side" src="WebLino_logo.png" width="190px" height="75px">
+            </div>
+        </div>
+       
+        <div class="bodybox">
+            <div id="bodybox1" class="bodybox_item">
+
+                <div class="fake_img1">
+                    <video width="1000px" height="500px" controls>
+                        <source src="IntroVid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>This is the introduction video of the WebLino Courses. Today we are going to be creating a Website using HTML and CSS!</p>
+            </div>
+
+            <div id="bodybox2" class="bodybox_item">
+                <div class="fake_img2">
+                    <video width="1000px" height="500px" controls>
+                        <source src="HTML_basics.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>In this video you will learn the basics of HTML, a coding language used to add content on your webpage. Follow the video and listen carefully.</p>
+            </div>
+
+            <div id="bodybox3" class="bodybox_item">
+                <div class="fake_img3">
+                    <video width="1000px" height="500px" controls>
+                        <source src="HTML_struxture.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>Today, you will learn how to build the base structure of your website using HTML and its multiple tags.</p>
+            </div>
+
+            <div id="bodybox4" class="bodybox_item">
+                <div class="fake_img4">
+                    <video width="1000px" height="500px" controls>
+                        <source src="layout.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>Now, you will be introduced to W3Schools.com, an amazing website that cover everything about Web. I will show you a template layout that will be our website's layout.</p>
+            </div>
+
+            <div id="bodybox5" class="bodybox_item">
+                <div class="fake_img5">
+                    <video width="1000px" height="500px" controls>
+                        <source src="CSS_basics.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>This video will teach you the basics of Cascading Style Sheets, also know as "CSS". It is used to tell the browser how to display the HTML content of your website.</p>
+            </div>
+
+            <div id="bodybox6" class="bodybox_item">
+                <div class="fake_img6">
+                    <video width="1000px" height="500px" controls>
+                        <source src="Designing_website.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p> In this video, I will teach you how to apply CSS on you website and change the way that your HTML content is displayed by the browser.</p>
+            </div>
+
+            <div id="bodybox7" class="bodybox_item">
+                <div class="fake_img7">
+                    <video width="1000px" height="500px" controls>
+                        <source src="Aesthetics.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>Now, we will go deeper in CSS and we will use more advanced tools of the Cascading Style Sheets.</p>
+            </div>
+
+            <div id="bodybox8" class="bodybox_item">
+                <div class="fake_img8">
+                    <video width="1000px" height="500px" controls>
+                        <source src="Review.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>This is a review of our final product. I hope you enjoyed this course and learned how to create your own website. Make sure to fill the following Google Forms:</p>
+                <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSf78317dT41nqQyh3HA8Ao4JJRrdHxB5yeRNi54yYThOtp1FA/viewform?usp=sf_link">Google Forms</a></p>
+            </div>
+        </div>
+
+    </div>  
+        <footer>
+        <div class="footer_content">
+            <div class="footerimg" >
+                <img src="WebLino_logo.png" width="190px" height="75px">
+            </div>
+            <div class="copyrighttext">
+                <p>Copyright © 2020 Weblino </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function openNav() {
+  document.getElementById("SideBar").style.width = "150px";
+}
+
+function closeNav() {
+  document.getElementById("SideBar").style.width = "0px";
+}
+
+function openCourse0() {
+    document.getElementById("bodybox1").style.visibility = "visible";
+    document.getElementById("bodybox2").style.visibility = "hidden";
+    document.getElementById("bodybox3").style.visibility = "hidden";
+    document.getElementById("bodybox4").style.visibility = "hidden";
+    document.getElementById("bodybox5").style.visibility = "hidden";
+    document.getElementById("bodybox6").style.visibility = "hidden";
+    document.getElementById("bodybox7").style.visibility = "hidden";
+    document.getElementById("bodybox8").style.visibility = "hidden";
+}
+
+function openCourse1() {
+    document.getElementById("bodybox1").style.visibility = "hidden";
+    document.getElementById("bodybox2").style.visibility = "visible";
+    document.getElementById("bodybox3").style.visibility = "hidden";
+    document.getElementById("bodybox4").style.visibility = "hidden";
+    document.getElementById("bodybox5").style.visibility = "hidden";
+    document.getElementById("bodybox6").style.visibility = "hidden";
+    document.getElementById("bodybox7").style.visibility = "hidden";
+    document.getElementById("bodybox8").style.visibility = "hidden";
+}
+
+function openCourse2() {
+    document.getElementById("bodybox1").style.visibility = "hidden";
+    document.getElementById("bodybox2").style.visibility = "hidden";
+    document.getElementById("bodybox3").style.visibility = "visible";
+    document.getElementById("bodybox4").style.visibility = "hidden";
+    document.getElementById("bodybox5").style.visibility = "hidden";
+    document.getElementById("bodybox6").style.visibility = "hidden";
+    document.getElementById("bodybox7").style.visibility = "hidden";
+    document.getElementById("bodybox8").style.visibility = "hidden";
+}
+
+function openCourse3() {
+    document.getElementById("bodybox1").style.visibility = "hidden";
+    document.getElementById("bodybox2").style.visibility = "hidden";
+    document.getElementById("bodybox3").style.visibility = "hidden";
+    document.getElementById("bodybox4").style.visibility = "visible";
+    document.getElementById("bodybox5").style.visibility = "hidden";
+    document.getElementById("bodybox6").style.visibility = "hidden";
+    document.getElementById("bodybox7").style.visibility = "hidden";
+    document.getElementById("bodybox8").style.visibility = "hidden";
+}
+
+function openCourse4() {
+    document.getElementById("bodybox1").style.visibility = "hidden";
+    document.getElementById("bodybox2").style.visibility = "hidden";
+    document.getElementById("bodybox3").style.visibility = "hidden";
+    document.getElementById("bodybox4").style.visibility = "hidden";
+    document.getElementById("bodybox5").style.visibility = "visible";
+    document.getElementById("bodybox6").style.visibility = "hidden";
+    document.getElementById("bodybox7").style.visibility = "hidden";
+    document.getElementById("bodybox8").style.visibility = "hidden";
+}
+
+function openCourse5() {
+    document.getElementById("bodybox1").style.visibility = "hidden";
+    document.getElementById("bodybox2").style.visibility = "hidden";
+    document.getElementById("bodybox3").style.visibility = "hidden";
+    document.getElementById("bodybox4").style.visibility = "hidden";
+    document.getElementById("bodybox5").style.visibility = "hidden";
+    document.getElementById("bodybox6").style.visibility = "visible";
+    document.getElementById("bodybox7").style.visibility = "hidden";
+    document.getElementById("bodybox8").style.visibility = "hidden";
+}
+
+function openCourse6() {
+    document.getElementById("bodybox1").style.visibility = "hidden";
+    document.getElementById("bodybox2").style.visibility = "hidden";
+    document.getElementById("bodybox3").style.visibility = "hidden";
+    document.getElementById("bodybox4").style.visibility = "hidden";
+    document.getElementById("bodybox5").style.visibility = "hidden";
+    document.getElementById("bodybox6").style.visibility = "hidden";
+    document.getElementById("bodybox7").style.visibility = "visible";
+    document.getElementById("bodybox8").style.visibility = "hidden";
+}
+
+function openCourse7() {
+    document.getElementById("bodybox1").style.visibility = "hidden";
+    document.getElementById("bodybox2").style.visibility = "hidden";
+    document.getElementById("bodybox3").style.visibility = "hidden";
+    document.getElementById("bodybox4").style.visibility = "hidden";
+    document.getElementById("bodybox5").style.visibility = "hidden";
+    document.getElementById("bodybox6").style.visibility = "hidden";
+    document.getElementById("bodybox7").style.visibility = "hidden";
+    document.getElementById("bodybox8").style.visibility = "visible";
+}
+</script>
+</html>

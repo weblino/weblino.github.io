@@ -1,0 +1,131 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+ 
+.webheader {
+   padding-top: 0px;
+   background-color: rgb(34, 34, 34);
+   margin: 0px;
+   box-shadow: 3px 3px 5px black;
+}
+ 
+header {
+    box-shadow: 3px 3px black;
+}
+ 
+.bodybox {
+    margin-top: 0px;
+    padding: 20px;
+    padding-bottom: 262px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(29,32,34,1) 100%);
+}
+
+.titl {
+    text-align: center;
+    font-size: 30px;
+    width: 250px;
+    padding-bottom: 10px;
+    margin-left: 815px;
+    margin-top: 0px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    background-color:#111111;
+    border-radius: 5px;
+}
+ 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgb(34, 34, 34);
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.5s;
+}
+  
+.sidenav a {
+    padding: 5px 5px 5px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.menubtn {
+    background: #111111; 
+    opacity: 0.4;
+    float: left;
+    margin-top:10px;
+    margin-left: 0px;
+    padding-left: 0px;
+    border: 2px;
+    border-color: black ;
+    border-radius: 50px;
+}
+ 
+ .menubtn:hover {
+    transition: .5s;
+    opacity: 0.8;
+ }
+  
+  .sidenav a:hover {
+    color:  #803BAD
+ }
+  
+ .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+ }
+#img_teacher {
+    display: inline-block;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 20px;
+    border: 8px solid white;
+    border-radius: 8px;
+    box-shadow: 8px 8px #803BAD;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.text_teacher {
+    float:left;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #111111;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(34, 34, 34);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+ 
+.footer_content {
+    width: 300px;
+}
+ 
+.footerimg {
+    position: relative;
+}
+ 
+.copyrighttext {
+    color: #ffffff;
+    top:50px;
+}

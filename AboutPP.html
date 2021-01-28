@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weblino - About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <div class="webheader">
+            <img src="WebLino_logo.png" height="75px" width="190px"> 
+        </div>
+    </header>
+    <div id="main" class="bodybox">
+        <div id="SideBar" class="sidenav">
+            <img src="WebLino_logo.png" height="25px" width="60px"> 
+            <a class="closebtn" onclick="closeNav()">&minus;</a>
+            <a href="file:///C:/Users/gmarc/Documents/WebsiteSchool/index.html">Home</a>
+            <a href="file:///C:/Users/gmarc/Documents/WebsiteSchool/AboutPP.html#">About</a>
+            <a href="file:///C:/Users/gmarc/Documents/WebsiteSchool/course.html">Courses</a>
+        </div>
+        
+        <img src="menu_icon.png" height="30px" width="30px" class="menubtn" onclick="openNav()">
+
+        <h1 class="titl" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Meet your teacher!</h1>
+            <div class="container">
+                <div class="side_container">
+                    <img id="img_teacher" class="item_container" src="MyCuteFace.jpg" height="305" width="175">
+                </div>
+
+                <div class="main_container">
+                    <p class="text_teacher"> Greetings! My name is Gabriel K. Marcolino,
+                         I'm currently 16 years old and I'll be your teacher! 
+                         I've been interested in technology from a very young age and at the age of 12, 
+                         I decided to learn JavaScript. Surprisingly, 
+                         I got the hang of it pretty quickly and started learning HTML and CSS, 
+                         which are the two languages I'll teach you in Weblino's courses! Also, 
+                         I recently started learning Python and I am getting reading to get my first Python Certificate. 
+                         I've worked with other languages like Lua for example, but never got the chance to truly use them again. 
+                         I created Weblino because I'm a promoter of free education. The world is changing and so is technology. 
+                         Soon, everything around us will be composed of electronics, and people should be educated. 
+                         My plan is to introduce as many people as I'm able to to the world of coding. Afterward, 
+                         the choice will be yours to continue learning about technology.</p>
+                </div>
+            </div> 
+    </div>           
+    <footer>
+        <div class="footer_content">
+            <div class="footerimg" >
+                <img src="WebLino_logo.png" width="190px" height="75px">
+            </div>
+            <div class="copyrighttext">
+                <p>Copyright © 2020 Weblino </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function openNav() {
+  document.getElementById("SideBar").style.width = "150px";
+}
+
+function closeNav() {
+  document.getElementById("SideBar").style.width = "0px";
+}
+
+</script>
+</html>

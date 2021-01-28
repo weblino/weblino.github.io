@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weblino - Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="webheader">
+            <img src="WebLino_logo.png" height="75px" width="190px"> 
+        </div>
+    </header>
+
+    <div id="main" class="bodybox">
+        <div id="SideBar" class="sidenav">
+            <img src="WebLino_logo.png" height="25px" width="60px"> 
+            <a class="closebtn" onclick="closeNav()">&minus;</a>
+            <a href="file:///C:/Users/gmarc/Documents/WebsiteSchool/index.html">Home</a>
+            <a href="file:///C:/Users/gmarc/Documents/WebsiteSchool/AboutPP.html#">About</a>
+            <a href="file:///C:/Users/gmarc/Documents/WebsiteSchool/course.html">Courses</a>
+        </div>
+
+        <img src="menu_icon.png" height="30px" width="30px" class="menubtn" onclick="openNav()">
+
+        <h1 class="titl" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Weblino Courses</h1>
+            <div class="container">
+                <div class="row">
+                    <div id="html_img"class="item_row">
+                        <img src="HTML_image_pp.png" width="400px" height="200">
+                    </div>
+                    <div class="hide_text_1" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Learn HTML for free</div>
+                    <div id="css_img"class="item_row">
+                        <img src="CSS_image_pp.png" width="400px" height="200">
+                    </div>
+                    <div class="hide_text_2" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Learn CSS for free</div>
+                </div> 
+                
+                <div class="button_container">
+                    <button class="button_start"><a href="file:///C:/Users/gmarc/Documents/WebsiteSchool/course.html" style="text-decoration:none"><p class="text_button">Start now for free!</p></a></button>
+                </div> 
+            </div> 
+        <hr>             
+    </div>
+    <div id="main2">
+        <img class="Body_img" src="HTML_image_pp.jpg" height="500px" width="1000px">
+        
+        <p class="text_goal">Weblino is an educational platform made by a coder who wants to encourage people 
+            to learn about Web and introduce them to the art of coding. Weblino's courses will 
+            give you the opportunity to learn and develop your skills as a future coder. One of Weblino's
+            greatest aspects is that we promote free education. Encourage us and our ideology by using our free services!
+        </p>
+            
+    </div>
+    <footer>
+        <div class="footer_content">
+            <div class="footerimg" >
+                <img src="WebLino_logo.png" width="190px" height="75px">
+            </div>
+            <div class="copyrighttext">
+                <p>Copyright © 2020 Weblino </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function openNav() {
+  document.getElementById("SideBar").style.width = "150px";
+  document.getElementById("main").style.marginLeft = "150px";
+  document.getElementById("main2").style.marginLeft = "150px";
+}
+
+function closeNav() {
+  document.getElementById("SideBar").style.width = "0px";
+  document.getElementById("main").style.marginLeft = "0px";
+  document.getElementById("main2").style.marginLeft = "0px";
+}
+
+</script>
+</html>
